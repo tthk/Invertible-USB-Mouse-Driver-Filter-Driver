@@ -1,6 +1,0 @@
-; SimpleDeviceOrientationSensor.def : Declares the module parameters.
-
-LIBRARY SimpleDeviceOrientationSensor
-
-EXPORTS
-

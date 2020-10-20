@@ -1,6 +1,0 @@
-; CustomSensors.def : Declares the module parameters.
-
-LIBRARY CustomSensors
-
-EXPORTS
-

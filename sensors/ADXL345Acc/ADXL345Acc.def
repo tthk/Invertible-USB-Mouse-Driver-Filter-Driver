@@ -1,6 +1,0 @@
-; ADXL345Acc.def : Declares the module parameters.
-
-LIBRARY ADXL345Acc
-
-EXPORTS
-
