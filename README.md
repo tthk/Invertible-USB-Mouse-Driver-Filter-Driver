@@ -24,6 +24,8 @@ Note, the mouse driver works for Windows universally, and does not know about an
 
 Now here's the bad news.  For understandable security reasons, Windows 10 will not allow unsigned kernel drivers to be installed or run, unless computer is in testing mode.  I'm not a Windows software developer, and do not have certificate to sign this simple driver, and don't want to spend $100+ to get one for this temporary fix (until miHoYo inevitably releases a fix soon).  So if you can't wait, like me, you WILL need to put your computer into Test Mode to allow Windows to load unsigned driver!
 
+WARNING: While your computer is in Test Mode (and it must be for this unsigned driver to work), Windows will not be enforcing trusted drivers for you!  You alone will be responsible for deciding which driver you trust.
+
 **How To Build:**
 
 How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "u/GuppyLive Invertible USB Mouse Driver" is available as a [fork of the official Microsoft WDK sample](https://github.com/tthk/Windows-driver-samples).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  A [pre-build unsigned x64 binary](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip) is available for download in the Github repo.
