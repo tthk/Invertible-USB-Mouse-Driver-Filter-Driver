@@ -26,12 +26,12 @@ Now here's the bad news.  For understandable security reasons, Windows 10 will n
 
 **How To Build:**
 
-How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "u/GuppyLive Invertible USB Mouse Driver" is available as a [fork of the official Microsoft WDK sample](https://github.com/tthk/Windows-driver-samples).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  I'll also provide a pre-build binary in the Github repo.
+How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "u/GuppyLive Invertible USB Mouse Driver" is available as a [fork of the official Microsoft WDK sample](https://github.com/tthk/Windows-driver-samples).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  A [pre-build unsigned x64 binary](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip) is available for download in the Github repo.
 
 **How To Install:**
 
 1. [Prepare your computer to run unsigned drivers](https://www.maketecheasier.com/install-unsigned-drivers-windows10/).
-1. Either build or download driver file.  Unzip.
+1. Either build or [download driver](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip) file and unzip.
 1. Open "Computer Management" -> "Device Manager"
 1. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
 1. "Browse my computer for drivers" -> "Let me pick from a list of available drivers on my computer" -> "Have Disk..."
