@@ -4,7 +4,7 @@ I wasn't able to play Genshin Impact because I game with inverted-y axis mouse. 
 
 I decided to adapt the official [Firefly Microsoft USB mouse filter sample project](https://github.com/microsoft/Windows-driver-samples/tree/master/hid/firefly) in the [WDK](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).  This software needs to be a Windows Kernel Driver because it's the only way to access mouse telemetry for games.  I'd expect miHoYo to release this very simple fix to their excellent game very soon, but in case you can't wait, I'm playing it very well now with this driver installed.
 
-Update 2/6/21: Code changed to match X & Y axis sensitivities.  Currently, miHoYo apparently has about 3x differental between X & Y axis sensitivities.  Compensate by multiplying Y axis by 3, but only in inverted mode.
+Update 2/6/21: Code changed to match X & Y axis sensitivities as follows. Currently, miHoYo apparently has about 3x differental between X & Y axis sensitivities.  Compensate by multiplying Y axis by 3, but only in inverted mode.  If you don't need this compensation, use the original pre-built binary or modify driver.c and change YMultiplier = 1.
 
 **What It Is:**
 
