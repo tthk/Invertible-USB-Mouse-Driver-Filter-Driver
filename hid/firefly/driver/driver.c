@@ -486,6 +486,7 @@ Return Value:
     static ULONG TriggerButtons = 0; // Whether we've seen the invert y trigger
     static LONG TriggerY = 0;       // Movement in Y to indicate triger
     static BOOLEAN Inverted = FALSE;
+    static LONG YMultiplier = 3; // Multiplier for Y data
     PDEVICE_EXTENSION   devExt;
     WDFDEVICE   hDevice;
 
@@ -500,7 +501,8 @@ Return Value:
         DebugPrint(("KTT:MouseButtons    : %#010x\n", InputData->Buttons));
         if (Inverted) {
             // Invert Y if required
-            InputData->LastY = -InputData->LastY;
+            InputData->LastY = -(InputData->LastY * YMultiplier);
+            DebugPrint(("KTT: MouseY : %d\n", InputData->LastY));
         }
         if (InputData->Buttons & (MOUSE_LEFT_BUTTON_UP |  MOUSE_RIGHT_BUTTON_UP)) {
             // A button relevant is up, clear triggering sequence

@@ -4,6 +4,8 @@ I wasn't able to play Genshin Impact because I game with inverted-y axis mouse. 
 
 I decided to adapt the official [Firefly Microsoft USB mouse filter sample project](https://github.com/microsoft/Windows-driver-samples/tree/master/hid/firefly) in the [WDK](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).  This software needs to be a Windows Kernel Driver because it's the only way to access mouse telemetry for games.  I'd expect miHoYo to release this very simple fix to their excellent game very soon, but in case you can't wait, I'm playing it very well now with this driver installed.
 
+Update 2/6/21: Code changed to match X & Y axis sensitivities.  Currently, miHoYo apparently has about 3x differental between X & Y axis sensitivities.  Compensate by multiplying Y axis by 3, but only in inverted mode.
+
 **What It Is:**
 
 A mouse filter driver for Windows x64 that allows on-the-fly toggling of Y axis.
@@ -33,13 +35,15 @@ How to build this driver is beyond the scope of this post, and I did much paring
 **How To Install:**
 
 1. [Prepare your computer to run unsigned drivers](https://www.maketecheasier.com/install-unsigned-drivers-windows10/).
-1. Either build or [download driver](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip) file and unzip.
-1. Open "Computer Management" -> "Device Manager"
-1. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
-1. "Browse my computer for drivers" -> "Let me pick from a list of available drivers on my computer" -> "Have Disk..."
-1. "Browse" then Navigate to your unzipped driver directory until you can double-click on "firefly.inf" -> "OK"
-1. Select "u/GuppyLive Invertible USB Mouse Filter" -> "Next"
-1. Accept all the dire warnings about unsigned drivers, and you're done!
+2. Either build or download driver from repository and unzip:
+	* [Windows x64 build] (https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
+	* [Windows x64 build 3Y (Y sensitivity x3)] (https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
+3. Open "Computer Management" -> "Device Manager"
+4. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
+5. "Browse my computer for drivers" -> "Let me pick from a list of available drivers on my computer" -> "Have Disk..."
+6. "Browse" then Navigate to your unzipped driver directory until you can double-click on "firefly.inf" -> "OK"
+7. Select "u/GuppyLive Invertible USB Mouse Filter" -> "Next"
+8. Accept all the dire warnings about unsigned drivers, and you're done!
 
 
 TLDR:
