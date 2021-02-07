@@ -35,25 +35,15 @@ How to build this driver is beyond the scope of this post, and I did much paring
 **How To Install:**
 
 1. [Prepare your computer to run unsigned drivers](https://www.maketecheasier.com/install-unsigned-drivers-windows10/).
-<<<<<<< HEAD
 2. Either build or download driver from repository and unzip:
-	* [Windows x64 build] (https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
-	* [Windows x64 build 3Y (Y sensitivity x3)] (https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
+	* [Windows x64 build](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
+	* [Windows x64 build 3Y (Y sensitivity x3)](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
 3. Open "Computer Management" -> "Device Manager"
 4. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
 5. "Browse my computer for drivers" -> "Let me pick from a list of available drivers on my computer" -> "Have Disk..."
 6. "Browse" then Navigate to your unzipped driver directory until you can double-click on "firefly.inf" -> "OK"
 7. Select "u/GuppyLive Invertible USB Mouse Filter" -> "Next"
 8. Accept all the dire warnings about unsigned drivers, and you're done!
-=======
-1. Either build or [download driver](https://github.com/tthk/Invertible-USB-Mouse-Driver-Filter-Driver/blob/master/Invertible%20USB%20Mouse%20Filter.zip) file and unzip.
-1. Open "Computer Management" -> "Device Manager"
-1. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
-1. "Browse my computer for drivers" -> "Let me pick from a list of available drivers on my computer" -> "Have Disk..."
-1. "Browse" then Navigate to your unzipped driver directory until you can double-click on "firefly.inf" -> "OK"
-1. Select "u/GuppyLive Invertible USB Mouse Filter" -> "Next"
-1. Accept all the dire warnings about unsigned drivers, and you're done!
->>>>>>> f8ea52274d1996a1a803184dd45c05318c8f4398
 
 
 TLDR:
