@@ -30,7 +30,11 @@ WARNING: While your computer is in Test Mode (and it must be for this unsigned d
 
 **How To Build:**
 
-How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "Invertible USB Mouse Filter Driver" is available as a fork of the official Microsoft WDK sample named [Invertible USB Mouse Filter Driver](https://github.com/tthk/Invertible-USB-Mouse-Driver-Filter-Driver).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  A [pre-build unsigned x64 binary](https://github.com/tthk/Invertible-USB-Mouse-Driver-Filter-Driver/blob/master/Invertible%20USB%20Mouse%20Filter.zip) is available for download in the Github repo.
+How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "Invertible USB Mouse Filter Driver" is available as a fork of the official Microsoft WDK sample named [Invertible USB Mouse Filter Driver](https://github.com/tthk/Invertible-USB-Mouse-Driver-Filter-Driver).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  Pre-build unsigned x64 binaries
+([Y sensitivity as is](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
+and
+([Y sensitivity x3](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
+are available for download in the Github repo.
 
 **How To Install:**
 
