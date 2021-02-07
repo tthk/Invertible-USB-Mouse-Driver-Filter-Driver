@@ -33,14 +33,14 @@ WARNING: While your computer is in Test Mode (and it must be for this unsigned d
 How to build this driver is beyond the scope of this post, and I did much paring of the code to use only what's needed.  The complete source for building this "Invertible USB Mouse Filter Driver" is available as a fork of the official Microsoft WDK sample named [Invertible USB Mouse Filter Driver](https://github.com/tthk/Invertible-USB-Mouse-Driver-Filter-Driver).  If you want to give it a try building, I used [this resource](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/building-a-driver).  Pre-build unsigned x64 binaries
 ([Y sensitivity as is](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
 and
-([Y sensitivity x3](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
+[Y sensitivity x3](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip))
 are available for download in the Github repo.
 
 **How To Install:**
 
-1. [Prepare your computer to run unsigned drivers](https://www.maketecheasier.com/install-unsigned-drivers-windows10/).
+1. [Prepare your computer to run unsigned drivers](https://www.maketecheasier.com/install-unsigned-drivers-windows10/).  I find putting Windows in Test Mode is easiest option.
 2. Either build or download driver from repository and unzip:
-	* [Windows x64 build](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
+	* [Windows x64 build (Y sensitivity as is)](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter.zip)
 	* [Windows x64 build 3Y (Y sensitivity x3)](https://github.com/tthk/Windows-driver-samples/raw/master/Invertible%20USB%20Mouse%20Filter%203Y.zip)
 3. Open "Computer Management" -> "Device Manager"
 4. Find your mouse under "Mice and other pointing devices", right-click, "Update driver"
